@@ -1,0 +1,46 @@
+logging :
+ level :
+  . : error
+  org.springframework : ERROR
+  com.ibm : ERROR
+
+spring : 
+ profiles :
+  active : "dev"
+ main :
+  banner-mode : "off"
+ 
+ server :
+  email : 07jerin@gmail.com  
+  port : 9000
+
+---
+ 
+spring : 
+ profiles : dev
+  
+server :
+  email : dev@email.com
+  cluster : 
+   - ip : 127.0.0.1
+     path : /dev1
+   - ip : 127.0.0.2
+     path : /dev2
+   - ip : 127.0.0.3
+     path : /dev3
+     
+
+---
+ 
+spring : 
+ profiles : prod
+  
+server :
+  email : prod@email.com
+  cluster : 
+   - ip : 127.0.0.1
+     path : /prod1
+   - ip : 127.0.0.2
+     path : /prod2
+   - ip : 127.0.0.3
+     path : /prod3

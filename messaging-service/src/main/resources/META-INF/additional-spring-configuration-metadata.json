@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "spring.activemq.in.memory",
+  "type": "java.lang.String",
+  "description": "A description for 'spring.activemq.in.memory'"
+}]}
